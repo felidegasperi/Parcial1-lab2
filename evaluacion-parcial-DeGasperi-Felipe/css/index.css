@@ -1,0 +1,179 @@
+@import
+url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap");
+
+* {
+  font-family: 'Lato', sans-serif;
+} 
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 50%;
+  padding: 60px 0px;
+}
+
+/* MENU: NAVBAR/HEADER */
+header {
+  background-color: rgba(104, 12, 12, 0.925);
+}
+
+.navegacion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.listadesordenada {
+  margin: 10px;
+  padding: 10px;
+  list-style-type: none;
+  display: inline-flex;
+}
+
+.elementolista {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 25%;
+  display: inline-flex;
+}
+
+nav ul li a {
+  margin: 2px;
+  padding: 2px;
+  color: #eeeeee;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 70;
+  width: 100%;
+  display: block;
+}
+
+nav ul li a:hover {
+  font-weight: bold;
+  color: #ff7514;
+}
+
+.imagencafe {
+  width: 100px;
+  height: 90px;
+  justify-content: flex-start;
+}
+
+/* SECTION MAIN IMAGE */
+
+#section-main-image {
+  height: 80vh;
+  background-image: url("https://images.unsplash.com/photo-1463797221720-6b07e6426c24?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2071&q=80");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#section-main-image h1 {
+  color: rgba(255, 255, 255, 0.5);
+  opacity: 0.7;
+  margin: 0;
+  text-align: center;
+  font-size: 70px;
+}
+
+/* SECTION COFFEE */
+
+#section-coffee {
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+#section-coffee #article-coffee h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+#section-coffee #article-products h2 {
+  text-align: center;
+  font-size: 30px;
+}
+table {
+  height: 40vh;
+  width: 30vh;
+  justify-content: center;
+}
+
+table thead {
+  display: flex;
+  max-width:max-content;
+  color: #eeeeee;
+  font-size: 20px;
+  background-color: rgba(104, 12, 12, 0.925);
+}
+
+table tbody {
+  text-align: center;
+  font-size: 15px;
+}
+
+table .cafes {
+  padding: 2px;
+  margin-bottom: 2px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.product {
+  padding: 0 15px;
+}
+
+.product img {
+  width: 30px;
+}
+
+/* FOOTER CONTACT */
+
+#footer-contact {
+  background-color:  #58462c;
+  color: #eeeeee;
+  display: flex;
+}
+#footer-contact .container{
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.contact-info {
+  flex-direction: column;
+}
+
+#footer-contact .contact-data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-form form {
+  margin-left: 50px;
+  text-align: right;
+}
+
+.contact-form form .form-control {
+  padding: 10px 0;
+}
+
+.contact-form form .form-control label {
+  margin: 40px, 0px, 40px, 0px;
+}
+
+.contact-form form div button {
+  margin-top: 15px;
+  color: #58462c;
+  padding: 2px 30px;
+}
